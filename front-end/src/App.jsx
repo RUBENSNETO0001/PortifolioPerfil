@@ -5,12 +5,12 @@ import './assets/css/css-estrutura/cssmain/sobremim.css'
 import './assets/css/css-estrutura/cssmain/projetos.css'
 import './assets/css/css-estrutura/cssmain/contato.css'
 
-import Header from './assets/estrutura/header.jsx'
-import Footer from './assets/estrutura/footer.jsx'
+import Header from './assets/estrutura/Header.jsx'
+import Footer from './assets/estrutura/Footer.jsx'
 //main
-import MainSobremim from './assets/estrutura/main/main_sobremim.jsx'
-import MainProjetos from './assets/estrutura/main/main_projetos.jsx'
-import MainContato from './assets/estrutura/main/main_contatos.jsx'
+import MainSobremim from './assets/estrutura/main/MainSobremim.jsx'
+import MainProjetos from './assets/estrutura/main/MainProjetos.jsx'
+import MainContato from './assets/estrutura/main/MainContato.jsx'
 
 function App() {
   const Main = () => {
