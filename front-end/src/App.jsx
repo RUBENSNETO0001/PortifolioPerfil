@@ -3,27 +3,31 @@ import './assets/css/css-estrutura/header.css'
 import './assets/css/css-estrutura/footer.css'
 import './assets/css/css-estrutura/cssmain/sobremim.css'
 import './assets/css/css-estrutura/cssmain/projetos.css'
-import './assets/css/App.css'
+import './assets/css/css-estrutura/cssmain/contato.css'
+
 import Header from './assets/estrutura/header.jsx'
 import Footer from './assets/estrutura/footer.jsx'
 //main
 import MainSobremim from './assets/estrutura/main/main_sobremim.jsx'
 import MainProjetos from './assets/estrutura/main/main_projetos.jsx'
+import MainContato from './assets/estrutura/main/main_contatos.jsx'
+
 function App() {
   const Main = () => {
-    return(
+    return (
       <>
-        <MainSobremim/>
-        <MainProjetos/>
+        <MainSobremim />
+        <MainProjetos />
+        <MainContato />
       </>
     )
-  } 
+  }
 
   return (
     <>
       <Header />
       <Main />
-      <Footer/>
+      <Footer />
     </>
   )
 }

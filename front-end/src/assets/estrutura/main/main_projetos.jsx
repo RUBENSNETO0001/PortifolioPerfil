@@ -15,6 +15,14 @@ const Projetos = () => {
             techs: ["Java", "SQL", "Swing"],
             linkGithub: "https://github.com/falk-dev/java-library-manager.git",
             linkDemo: "#"
+        },
+        {
+            id: 3,
+            titulo: "Loja Belli Douceur",
+            descricao: "Projeto de e-commerce para uma loja de doces, desenvolvido com HTML, CSS e JavaScript. O site apresenta um design atraente e responsivo, permitindo aos usuários navegar pelos produtos, adicionar itens ao carrinho e finalizar compras de forma intuitiva.",
+            techs: ['HTML', 'CSS', 'JavaScript'],
+            linkGithub: "https://github.com/RUBENSNETO0001/--LojaBelliDouceur--",
+            linkDemo: "#"
         }
     ];
 

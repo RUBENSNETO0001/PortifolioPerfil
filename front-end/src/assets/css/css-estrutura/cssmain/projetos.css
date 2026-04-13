@@ -6,6 +6,22 @@
   scroll-behavior: smooth;
 }
 
+.projetos-container h2 {
+  margin-bottom: 48px;
+  position: relative;
+  display: inline-block;
+}
+
+.projetos-container h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--accent);
+  border-radius: 2px;
+}
 .carrossel-wrapper::-webkit-scrollbar {
   display: none;
 }
@@ -13,9 +29,9 @@
 .projetos-lista-carrossel {
   display: flex;
   gap: 40px;
-  padding: 0 15%; /* Centraliza o primeiro card */
+  padding: 0 15%; 
   scroll-snap-type: x mandatory;
-  perspective: 1200px; /* Cria o ambiente 3D */
+  perspective: 1200px;
 }
 
 .projeto-item {
@@ -25,26 +41,23 @@
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid var(--border);
-  border-radius: 40px; /* Bem redondo como você pediu */
+  border-radius: 40px; 
   padding: 40px;
   position: relative;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
   box-shadow: var(--shadow);
   
-  /* Rotação inicial leve para efeito de profundidade */
   transform: rotateY(-5deg);
 }
 
-/* Efeito de Destaque no Card Central/Hover */
 .projeto-item:hover {
   transform: rotateY(0deg) scale(1.08) translateY(-10px);
   border-color: var(--accent);
-  background: rgba(170, 59, 255, 0.08); /* Glow interno roxo */
+  background: rgba(170, 59, 255, 0.08);
   box-shadow: 0 30px 60px -15px rgba(170, 59, 255, 0.3);
   z-index: 10;
 }
 
-/* Título e Conteúdo */
 .projeto-item h3 {
   font-size: 28px;
   color: var(--text-h);
@@ -58,8 +71,6 @@
   color: var(--text);
   margin-bottom: 24px;
 }
-
-/* Tags menores e arredondadas */
 .tag-mini {
   font-family: var(--mono);
   font-size: 11px;
@@ -71,7 +82,6 @@
   margin-right: 6px;
 }
 
-/* Botões do Card estilo Glass */
 .projeto-links {
   margin-top: auto;
   display: flex;
@@ -98,11 +108,10 @@
   border-color: var(--accent);
 }
 
-/* Ajuste Mobile */
 @media (max-width: 768px) {
   .projeto-item {
     flex: 0 0 85%;
-    transform: none; /* Remove 3D no mobile para melhor performance */
+    transform: none; 
     padding: 30px;
   }
   .projetos-lista-carrossel {
