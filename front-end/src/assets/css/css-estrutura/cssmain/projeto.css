@@ -4,8 +4,8 @@
   padding: 60px 0;
   scrollbar-width: none;
   scroll-behavior: smooth;
+  scroll-padding: 0 15%; 
 }
-
 .projetos-container h2 {
   margin-bottom: 48px;
   position: relative;
@@ -32,6 +32,7 @@
   padding: 0 15%; 
   scroll-snap-type: x mandatory;
   perspective: 1200px;
+  box-sizing: content-box; 
 }
 
 .projeto-item {
@@ -48,6 +49,12 @@
   box-shadow: var(--shadow);
   
   transform: rotateY(-5deg);
+}
+
+.projetos-lista-carrossel::after {
+  content: '';
+  flex: 0 0 1px;
+  margin-left: -40px;
 }
 
 .projeto-item:hover {
@@ -109,13 +116,23 @@
 }
 
 @media (max-width: 768px) {
+  .carrossel-wrapper {
+    scroll-padding: 0 7.5%;
+  }
+
+  .projetos-lista-carrossel {
+    padding: 0 7.5%;
+    gap: 20px;
+  }
+
   .projeto-item {
     flex: 0 0 85%;
     transform: none; 
     padding: 30px;
+    scroll-snap-align: center;
   }
-  .projetos-lista-carrossel {
-    padding: 0 7.5%;
-    gap: 20px;
+  
+  .projetos-lista-carrossel::after {
+    margin-left: -20px; 
   }
 }

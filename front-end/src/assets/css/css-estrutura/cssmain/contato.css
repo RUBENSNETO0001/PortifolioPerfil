@@ -16,7 +16,6 @@
   margin-bottom: 48px;
 }
 
-/* Grid de contatos */
 .contato-grid {
   display: flex;
   justify-content: center;
@@ -24,7 +23,6 @@
   gap: 20px;
 }
 
-/* O Card de Contato */
 .contato-card {
   background: var(--social-bg);
   backdrop-filter: blur(10px);
@@ -50,7 +48,6 @@
   color: var(--text-h);
 }
 
-/* Efeito Hover Neon */
 .contato-card:hover {
   transform: translateY(-8px) scale(1.05);
   border-color: var(--accent);
@@ -61,7 +58,6 @@
   color: var(--accent);
 }
 
-/* Responsividade */
 @media (max-width: 600px) {
   .contato-grid {
     flex-direction: column;
