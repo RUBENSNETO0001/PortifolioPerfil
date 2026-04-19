@@ -116,7 +116,7 @@
   border-color: var(--accent);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .carrossel-wrapper {
     scroll-padding: 0 7.5%;
   }
@@ -124,6 +124,7 @@
   .projetos-lista-carrossel {
     padding: 0 7.5%;
     gap: 20px;
+    justify-content: start;
   }
 
   .projeto-item {
