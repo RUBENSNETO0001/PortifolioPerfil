@@ -33,6 +33,7 @@
   scroll-snap-type: x mandatory;
   perspective: 1200px;
   box-sizing: content-box; 
+  justify-content: center;
 }
 
 .projeto-item {
