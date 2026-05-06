@@ -2,17 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 :root {
-  --text: #9ca3af;
-  --text-h: #f3f4f6;
-  --bg: #16171d;
-  --border: #2e303a;
-  --code-bg: #1f2028;
-  --accent: #c084fc;
-  --accent-bg: rgba(192, 132, 252, 0.15);
-  --accent-border: rgba(192, 132, 252, 0.5);
-  --social-bg: rgba(47, 48, 58, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+ --text: #4b5563;           /* Cinza escuro para leitura */
+  --text-h: #111827;         /* Quase preto para títulos */
+  --bg: #ffffff;             /* Fundo branco limpo */
+  --border: #e5e7eb;         /* Bordas suaves */
+  --code-bg: #f3f4f6;        /* Fundo de código levemente cinza */
+  --accent: #9333ea;         /* Roxo um pouco mais saturado para contraste no claro */
+  --accent-bg: rgba(147, 51, 234, 0.1); 
+  --accent-border: rgba(147, 51, 234, 0.3);
+  --social-bg: rgba(229, 231, 235, 0.5);
+  --shadow: 
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
